@@ -1,0 +1,130 @@
+:root {
+  --font-family: "Arial", sans-serif;
+  --primary-color: #023e8a;
+  --hover-color: #dee2e6;
+  --bg-color: #ebf4f5;
+  --gradient-color: #b5c6e0;
+}
+body {
+  margin: 0;
+}
+.home-container {
+  width: 100vw;
+  background: linear-gradient(to right, var(--bg-color), var(--gradient-color));
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 30px;
+  position: relative;
+  margin-top: 220px;
+}
+.home-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.home-heading {
+  text-align: center;
+  margin-top: 45px;
+}
+.home-heading h6 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+.home-heading p {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-top: 20px;
+}
+.home-buttond {
+  text-align: center;
+  gap: 20px;
+}
+.home-buttond button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-weight: bold;
+  color: #001524;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+.home-buttond button:hover {
+  background-color: var(--hover-color);
+  font-size: 1.1rem;
+}
+.home-buttond p {
+  font-size: 0.9rem;
+}
+.home-video {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+.home-video .big-video video,
+.home-video .sub-video video {
+  border-radius: 8px;
+  object-fit: cover;
+}
+.home-video .big-video video {
+  width: 700px;
+  height: 500px;
+}
+.home-video .sub-video {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+}
+.home-video .sub-video video {
+  width: 500px;
+  height: 225px;
+}
+.para {
+  text-align: center;
+}
+.para p {
+  font-size: 1rem;
+  margin: 0;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1350px;
+  margin: 30px auto 60px;
+  gap: 30px;
+}
+.testimonials div {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+.testimonials div h6 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.testimonials div p {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 15px;
+}
+.testimonials div button {
+  padding: 8px 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.testimonials div button:hover {
+  background-color: #caf0f8;
+  border-color: black;
+}

@@ -1,0 +1,54 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 117px;
+  padding: 3px 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 2px -1px rgba(0, 0, 0, 0.2);
+}
+.logo p b {
+  color: red;
+}
+.logo p {
+  display: flex;
+  gap: 5px;
+}
+.logo .logo-holder {
+  margin-right: 20px;
+}
+.logo .logo-holder img {
+  width: 60px;
+}
+.container .three-bar {
+  padding-bottom: 9px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  display: none;
+}
+.navber-buttons {
+  display: flex;
+  align-items: center;
+}
+.navber-buttons .verified {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+.verified p {
+  padding-top: 15px;
+}
+.verified:hover {
+  color: 8;
+}
+header .hk-nav-gesture .active-links {
+  color: rgb(187, 21, 21);
+  font-style: bold;
+  font-weight: 600;
+}

@@ -1,0 +1,108 @@
+/* General Container */
+.my-about-container {
+  width: 70vw;
+  display: flex;
+  margin-top: 220px;
+  transform: translateX(4%);
+}
+.about-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.8;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #fffbf5, #f0f7ff);
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff7b54;
+  margin-bottom: 15px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Content Section */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+.about-feature {
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideUp 1s ease-in-out;
+}
+
+.about-feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Feature Colors */
+.feature-one {
+  background: linear-gradient(135deg, #ff7b54, #ffae54);
+}
+
+.feature-two {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.feature-three {
+  background: linear-gradient(135deg, #4a90e2, #86c5f4);
+}
+
+/* Feature Titles */
+.feature-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Feature Descriptions */
+.feature-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
